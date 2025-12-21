@@ -186,10 +186,10 @@
    */
   function getCurrentTheme() {
     const saved = localStorage.getItem('theme');
-    if (saved && ['light', 'dark', 'auto'].includes(saved)) {
+    if (saved && ['light', 'dark'].includes(saved)) {
       return saved;
     }
-    return CONFIG.site.defaultTheme;
+    return 'light';
   }
 
   /**
@@ -197,18 +197,8 @@
    */
   function applyTheme(theme) {
     const root = document.documentElement;
-    
-    if (theme === 'auto') {
-      // 跟随系统
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-    } else {
-      root.setAttribute('data-theme', theme);
-    }
-    
+    root.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    
-    // 更新主题切换按钮
     updateThemeToggle(theme);
   }
 
@@ -218,16 +208,10 @@
   function updateThemeToggle(theme) {
     const toggle = document.querySelector('.theme-toggle');
     if (!toggle) return;
-    
+
     const icon = toggle.querySelector('.theme-icon');
     if (icon) {
-      if (theme === 'dark') {
-        icon.textContent = '🌙';
-      } else if (theme === 'light') {
-        icon.textContent = '☀️';
-      } else {
-        icon.textContent = '🌓';
-      }
+      icon.textContent = theme === 'dark' ? '🌙' : '☀️';
     }
   }
 
@@ -236,17 +220,7 @@
    */
   function toggleTheme() {
     const current = getCurrentTheme();
-    let next;
-    
-    if (current === 'light') {
-      next = 'dark';
-    } else if (current === 'dark') {
-      next = 'auto';
-    } else {
-      next = 'light';
-    }
-    
-    applyTheme(next);
+    applyTheme(current === 'light' ? 'dark' : 'light');
   }
 
   // ========================================
