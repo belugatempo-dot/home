@@ -240,6 +240,11 @@ main {
   font-size: var(--font-size-2xl);
 }
 
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
 .nav {
   display: flex;
   align-items: center;
