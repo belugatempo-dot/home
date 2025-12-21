@@ -378,6 +378,13 @@ main {
   letter-spacing: -0.03em;
 }
 
+.hero-logo {
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto var(--space-6);
+  display: block;
+}
+
 .hero-tagline {
   font-size: var(--font-size-xl);
   color: var(--color-primary);

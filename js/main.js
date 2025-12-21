@@ -200,6 +200,13 @@
     root.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
     updateThemeToggle(theme);
+    updateThemeLogo(theme);
+  }
+
+  function updateThemeLogo(theme) {
+    document.querySelectorAll('.hero-logo[data-logo-light][data-logo-dark]').forEach(img => {
+      img.src = theme === 'dark' ? img.dataset.logoDark : img.dataset.logoLight;
+    });
   }
 
   /**
