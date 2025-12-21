@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updates | Beluga Tempo</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="News, announcements, and updates from the Beluga Tempo team." data-i18n="updates.pageTitle">
+  <meta name="keywords" content="Beluga Tempo, updates, news, announcements, blog">
+  <meta name="author" content="Beluga Tempo">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Updates | Beluga Tempo">
+  <meta property="og:description" content="News, announcements, and updates from the Beluga Tempo team.">
+  <meta property="og:site_name" content="Beluga Tempo">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐋</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page-title="updates.pageTitle">
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐋</span>
+        <span class="logo-text" data-i18n="common.companyName">Beluga Tempo</span>
+      </a>
+      
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="products.html" class="nav-link" data-i18n="nav.products">Products</a></li>
+          <li><a href="updates.html" class="nav-link active" data-i18n="nav.updates">Updates</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌓</span>
+          </button>
+          <button class="lang-switch" aria-label="Switch language">中文</button>
+        </div>
+        
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title" data-i18n="updates.hero.title">Updates</h1>
+        <p class="page-subtitle" data-i18n="updates.hero.subtitle">News, announcements, and insights from the Beluga Tempo team.</p>
+      </div>
+    </section>
+
+    <!-- Updates List -->
+    <section class="section">
+      <div class="container">
+        <div class="updates-list">
+          <!-- Placeholder Update -->
+          <article class="update-item">
+            <time class="update-date" data-i18n="updates.placeholder.date">January 2024</time>
+            <h2 class="update-title" data-i18n="updates.placeholder.title">Welcome to Beluga Tempo</h2>
+            <p class="update-content" data-i18n="updates.placeholder.content">
+              We are excited to announce the founding of Beluga Tempo. Stay tuned for more updates as we build our first products.
+            </p>
+          </article>
+          
+          <!-- Empty State (will show when no updates) -->
+          <!--
+          <div class="empty-state">
+            <div class="empty-state-icon">📝</div>
+            <h3 class="empty-state-title" data-i18n="updates.empty.title">No updates yet</h3>
+            <p data-i18n="updates.empty.description">
+              We are just getting started. Subscribe to our newsletter to be the first to know when we share updates.
+            </p>
+            <a href="#" class="btn btn-primary mt-8 newsletter-btn" data-action="newsletter" data-i18n="home.hero.ctaPrimary">Get Updates</a>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo" data-i18n="common.companyName">Beluga Tempo</div>
+          <p class="footer-tagline" data-i18n="footer.tagline">Building tools that amplify human potential.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-section-title" data-i18n="footer.sections.company">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+            <li><a href="updates.html" data-i18n="nav.updates">Updates</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-section-title" data-i18n="footer.sections.legal">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="nav.terms">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-section-title" data-i18n="footer.sections.connect">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright" data-copyright></p>
+        <div class="footer-social social-links"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
