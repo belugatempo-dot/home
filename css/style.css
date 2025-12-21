@@ -92,14 +92,14 @@
 
 /* Dark Theme */
 [data-theme="dark"] {
-  --color-bg: #1e1e1e;
-  --color-bg-secondary: #282828;
-  --color-bg-tertiary: #333333;
+  --color-bg: #232424;
+  --color-bg-secondary: #2a2b2b;
+  --color-bg-tertiary: #333434;
   --color-text: #f5f5f5;
   --color-text-secondary: #a0a0a0;
   --color-text-muted: #6e6e73;
-  --color-border: #3a3a3a;
-  --color-border-light: #2a2a2a;
+  --color-border: #3a3b3b;
+  --color-border-light: #2d2e2e;
   
   --color-primary: #4d9fff;
   --color-primary-hover: #3d8ae6;
