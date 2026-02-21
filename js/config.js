@@ -33,7 +33,7 @@ const CONFIG = {
   // ========================================
   contact: {
     // [PLACEHOLDER] 替换为真实邮箱
-    email: 'hello@beluga-tempo.com',
+    email: 'hi@beluga-tempo.com',
     // [PLACEHOLDER] 替换为真实社交链接，留空则不显示
     social: {
       twitter: 'https://twitter.com/belugatempo',
