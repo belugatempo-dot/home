@@ -279,10 +279,11 @@
   function renderValues() {
     const container = document.querySelector('.values-grid');
     if (!container) return;
-    
+    if (!CONFIG.values || !CONFIG.values.length) return;
+
     const lang = getCurrentLang();
     container.innerHTML = '';
-    
+
     CONFIG.values.forEach(value => {
       const card = document.createElement('div');
       card.className = 'value-card';
@@ -296,23 +297,46 @@
   }
 
   /**
-   * 渲染产品卡片
+   * 渲染产品/项目卡片
    */
   function renderProducts() {
     const container = document.querySelector('.products-grid');
     if (!container) return;
-    
+
     const lang = getCurrentLang();
     container.innerHTML = '';
-    
+
     CONFIG.products.forEach(product => {
       const card = document.createElement('div');
       card.className = 'product-card';
+
+      // Status badge
+      let statusClass = 'product-status';
+      let statusText = t('common.comingSoon', lang);
+      if (product.status === 'live') {
+        statusClass += ' product-status-live';
+        statusText = t('common.live', lang);
+      } else if (product.status === 'github') {
+        statusClass += ' product-status-github';
+        statusText = t('common.githubOnly', lang);
+      }
+
+      // Action links
+      let linksHtml = '<div class="product-links">';
+      if (product.url) {
+        linksHtml += `<a href="${product.url}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">${t('common.visitSite', lang)}</a>`;
+      }
+      if (product.github) {
+        linksHtml += `<a href="${product.github}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">${t('common.viewGithub', lang)}</a>`;
+      }
+      linksHtml += '</div>';
+
       card.innerHTML = `
         <div class="product-icon">${product.icon}</div>
         <h3 class="product-name">${lang === 'zh' ? product.nameZh : product.nameEn}</h3>
         <p class="product-description">${lang === 'zh' ? product.descriptionZh : product.descriptionEn}</p>
-        <span class="product-status">${t('common.comingSoon', lang)}</span>
+        <span class="${statusClass}">${statusText}</span>
+        ${linksHtml}
       `;
       container.appendChild(card);
     });

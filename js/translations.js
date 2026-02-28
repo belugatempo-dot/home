@@ -2,7 +2,7 @@
  * ========================================
  * BELUGA TEMPO - TRANSLATIONS
  * ========================================
- * 
+ *
  * 所有网站文本内容的中英文翻译。
  * 使用 CONFIG 中的公司信息时用 {{variable}} 占位。
  */
@@ -24,6 +24,22 @@ const TRANSLATIONS = {
       en: 'Coming Soon',
       zh: '即将推出'
     },
+    live: {
+      en: 'Live',
+      zh: '已上线'
+    },
+    githubOnly: {
+      en: 'GitHub Only',
+      zh: '仅 GitHub'
+    },
+    visitSite: {
+      en: 'Visit Site',
+      zh: '访问站点'
+    },
+    viewGithub: {
+      en: 'GitHub',
+      zh: 'GitHub'
+    },
     learnMore: {
       en: 'Learn More',
       zh: '了解更多'
@@ -40,7 +56,7 @@ const TRANSLATIONS = {
   nav: {
     home: { en: 'Home', zh: '首页' },
     about: { en: 'About', zh: '关于' },
-    products: { en: 'Products', zh: '产品' },
+    products: { en: 'Projects', zh: '项目' },
     updates: { en: 'Updates', zh: '动态' },
     contact: { en: 'Contact', zh: '联系' },
     privacy: { en: 'Privacy Policy', zh: '隐私政策' },
@@ -62,16 +78,26 @@ const TRANSLATIONS = {
         zh: '构建放大人类潜能的工具'
       },
       description: {
-        en: 'We are a Silicon Valley company creating thoughtful products for people who want to do more with less friction.',
-        zh: '我们是一家硅谷公司，为希望减少阻力、实现更多目标的人们创造用心的产品。'
+        en: 'A solo maker studio shipping real projects — from math education to investment tools.',
+        zh: '一个独立创作者工作室，持续发布真实项目——从数学教育到投资工具。'
       },
       ctaPrimary: {
-        en: 'Get Updates',
-        zh: '获取更新'
+        en: 'Explore Projects',
+        zh: '探索项目'
       },
       ctaSecondary: {
         en: 'Contact Us',
         zh: '联系我们'
+      }
+    },
+    galaxy: {
+      title: {
+        en: 'Project Galaxy',
+        zh: '项目星河'
+      },
+      subtitle: {
+        en: 'Real projects, shipped and live.',
+        zh: '真实项目，已发布上线。'
       }
     },
     values: {
@@ -106,8 +132,8 @@ const TRANSLATIONS = {
         zh: '关于鲸律'
       },
       subtitle: {
-        en: 'Our story, mission, and the people behind our products.',
-        zh: '我们的故事、使命，以及产品背后的团队。'
+        en: 'Our story and the person behind the projects.',
+        zh: '我们的故事，以及项目背后的创作者。'
       }
     },
     story: {
@@ -116,8 +142,8 @@ const TRANSLATIONS = {
         zh: '我们的故事'
       },
       content: {
-        en: 'Beluga Tempo was founded in 2024 in the heart of Silicon Valley with a simple belief: technology should make life easier, not more complicated. We observed that many tools meant to help people actually added friction to their workflows. We set out to change that.\n\nOur name combines the grace and intelligence of the beluga whale with the rhythm and flow implied by tempo. Just as belugas navigate vast oceans with elegance, we help people navigate their work and life with tools that feel natural and effortless.',
-        zh: '鲸律于2024年在硅谷创立，秉持一个简单的信念：技术应该让生活更简单，而不是更复杂。我们观察到，许多本应帮助人们的工具实际上增加了工作流程中的阻力。我们决心改变这一现状。\n\n我们的名字结合了白鲸的优雅与智慧，以及"律"所暗示的节奏与流动。正如白鲸优雅地遨游于广阔的海洋，我们帮助人们用自然流畅的工具驾驭工作与生活。'
+        en: 'Beluga Tempo was born in 2026 in Palo Alto, California. It started as a one-person experiment: what if I just shipped things — tools I actually wanted to use, problems I actually wanted to solve?\n\nThe name combines the grace of the beluga whale with the rhythm implied by tempo. Build with elegance, ship with rhythm. That is the idea.',
+        zh: '鲸律诞生于 2026 年，加州帕罗奥图。它始于一个人的实验：如果我只管做东西——做我真正想用的工具、解决我真正想解决的问题——会怎样？\n\n名字结合了白鲸的优雅与"律"所暗示的节奏。优雅地构建，有节奏地发布。这就是初心。'
       }
     },
     mission: {
@@ -132,12 +158,12 @@ const TRANSLATIONS = {
     },
     team: {
       title: {
-        en: 'The Team',
-        zh: '团队'
+        en: 'The Maker',
+        zh: '创作者'
       },
       content: {
-        en: 'We are a small, focused team of builders, designers, and dreamers. We have experience from leading technology companies and a shared passion for creating products that matter. More team details coming soon.',
-        zh: '我们是一支专注的小团队，由构建者、设计师和梦想家组成。我们拥有来自领先科技公司的经验，并共同热爱创造有意义的产品。更多团队详情即将公布。'
+        en: 'Beluga Tempo is a solo studio. I design, build, and ship everything myself — with help from AI and open source. I believe one person with the right tools can ship what used to take a team.',
+        zh: '鲸律是一个独立工作室。我自己设计、构建和发布所有东西——借助 AI 和开源的力量。我相信，一个人加上合适的工具，可以做到过去需要一个团队才能完成的事。'
       }
     },
     values: {
@@ -149,21 +175,21 @@ const TRANSLATIONS = {
   },
 
   // ========================================
-  // PRODUCTS PAGE | 产品页面
+  // PRODUCTS PAGE | 项目页面
   // ========================================
   products: {
     pageTitle: {
-      en: 'Products | Beluga Tempo',
-      zh: '产品 | 鲸律'
+      en: 'Projects | Beluga Tempo',
+      zh: '项目 | 鲸律'
     },
     hero: {
       title: {
-        en: 'Our Products',
-        zh: '我们的产品'
+        en: 'Project Galaxy',
+        zh: '项目星河'
       },
       subtitle: {
-        en: 'A growing suite of tools designed to help you work smarter and live better.',
-        zh: '不断壮大的工具套件，助你更智能地工作，更美好地生活。'
+        en: 'Real projects, shipped and live.',
+        zh: '真实项目，已发布上线。'
       }
     },
     upcoming: {
