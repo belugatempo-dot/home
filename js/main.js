@@ -329,6 +329,12 @@
       if (product.github) {
         linksHtml += `<a href="${product.github}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">${t('common.viewGithub', lang)}</a>`;
       }
+      if (product.introUrl) {
+        linksHtml += `<a href="${product.introUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">${t('common.viewIntro', lang)}</a>`;
+      }
+      if (product.demoUrl) {
+        linksHtml += `<a href="${product.demoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">${t('common.tryDemo', lang)}</a>`;
+      }
       linksHtml += '</div>';
 
       card.innerHTML = `

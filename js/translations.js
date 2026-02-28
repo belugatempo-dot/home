@@ -40,6 +40,14 @@ const TRANSLATIONS = {
       en: 'GitHub',
       zh: 'GitHub'
     },
+    viewIntro: {
+      en: 'Introduction',
+      zh: '介绍'
+    },
+    tryDemo: {
+      en: 'Try Demo',
+      zh: '试用 Demo'
+    },
     learnMore: {
       en: 'Learn More',
       zh: '了解更多'

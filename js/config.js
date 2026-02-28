@@ -94,7 +94,9 @@ const CONFIG = {
       status: 'live',
       icon: '⭐',
       url: 'https://starquest.beluga-tempo.com',
-      github: 'https://github.com/belugatempo-dot/StarQuest'
+      github: 'https://github.com/belugatempo-dot/StarQuest',
+      introUrl: 'https://starquest.beluga-tempo.com/starquest-visualization.html',
+      demoUrl: 'https://starquest.beluga-tempo.com/zh-CN/login'
     },
     {
       id: 'tide-planner-2026',
