@@ -26,7 +26,7 @@ const CONFIG = {
   contact: {
     email: 'belugatempo@gmail.com',
     social: {
-      twitter: 'https://twitter.com/belugatempo',
+      twitter: '',
       linkedin: '',
       github: 'https://github.com/belugatempo-dot',
       producthunt: '',
@@ -75,28 +75,6 @@ const CONFIG = {
   // ========================================
   products: [
     {
-      id: 'starquest',
-      nameEn: 'StarQuest',
-      nameZh: 'StarQuest 星途探险',
-      descriptionEn: 'Complete quests. Earn stars. Unlock rewards. A gamified task and habit tracker.',
-      descriptionZh: '完成任务，收集星星，解锁奖励。一款游戏化的任务与习惯追踪器。',
-      status: 'live',
-      icon: '⭐',
-      url: 'https://starquest.beluga-tempo.com',
-      github: 'https://github.com/belugatempo-dot/StarQuest'
-    },
-    {
-      id: 'math-visualization',
-      nameEn: 'Math Visualization',
-      nameZh: '数学可视化',
-      descriptionEn: 'Interactive visualizations that make abstract math concepts tangible and intuitive.',
-      descriptionZh: '交互式可视化，让抽象的数学概念变得直观可感。',
-      status: 'live',
-      icon: '📐',
-      url: 'https://math.beluga-tempo.com',
-      github: 'https://github.com/belugatempo-dot/math-visualization'
-    },
-    {
       id: 'invest-app',
       nameEn: 'Investment Dashboard',
       nameZh: '投资仪表板',
@@ -108,15 +86,15 @@ const CONFIG = {
       github: 'https://github.com/belugatempo-dot/invest-app'
     },
     {
-      id: 'math-quest',
-      nameEn: 'Math Quest',
-      nameZh: '数学冒险',
-      descriptionEn: 'A gamified math learning adventure that makes practice fun and engaging.',
-      descriptionZh: '一款游戏化的数学学习冒险，让练习变得有趣且引人入胜。',
+      id: 'starquest',
+      nameEn: 'StarQuest',
+      nameZh: 'StarQuest 星途探险',
+      descriptionEn: 'Complete quests. Earn stars. Unlock rewards. A gamified task and habit tracker.',
+      descriptionZh: '完成任务，收集星星，解锁奖励。一款游戏化的任务与习惯追踪器。',
       status: 'live',
-      icon: '🎮',
-      url: 'https://math-quest.beluga-tempo.com',
-      github: 'https://github.com/belugatempo-dot/math-quest'
+      icon: '⭐',
+      url: 'https://starquest.beluga-tempo.com',
+      github: 'https://github.com/belugatempo-dot/StarQuest'
     },
     {
       id: 'tide-planner-2026',
@@ -139,6 +117,50 @@ const CONFIG = {
       icon: '🔍',
       url: '',
       github: 'https://github.com/belugatempo-dot/codebase-visualizer'
+    },
+    {
+      id: 'math-visualization',
+      nameEn: 'Math Visualization',
+      nameZh: '数学可视化',
+      descriptionEn: 'Interactive visualizations that make abstract math concepts tangible and intuitive.',
+      descriptionZh: '交互式可视化，让抽象的数学概念变得直观可感。',
+      status: 'live',
+      icon: '📐',
+      url: 'https://math.beluga-tempo.com',
+      github: 'https://github.com/belugatempo-dot/math-visualization'
+    },
+    {
+      id: 'math-quest',
+      nameEn: 'Math Quest',
+      nameZh: '数学冒险',
+      descriptionEn: 'A gamified math learning adventure that makes practice fun and engaging.',
+      descriptionZh: '一款游戏化的数学学习冒险，让练习变得有趣且引人入胜。',
+      status: 'live',
+      icon: '🎮',
+      url: 'https://math-quest.beluga-tempo.com',
+      github: 'https://github.com/belugatempo-dot/math-quest'
+    },
+    {
+      id: 'socratic-coach',
+      nameEn: 'Socratic Coach',
+      nameZh: '苏格拉底教练',
+      descriptionEn: 'A Claude Code skill that turns Claude into a Socratic coaching agent — helping users think through decisions by asking probing questions.',
+      descriptionZh: '一个 Claude Code 技能，将 Claude 变成苏格拉底式教练——通过提出探究性问题帮助用户深入思考决策。',
+      status: 'github',
+      icon: '🧠',
+      url: '',
+      github: 'https://github.com/belugatempo-dot/socratic-coach'
+    },
+    {
+      id: 'census-dashboard',
+      nameEn: 'Census Dashboard',
+      nameZh: '人口普查仪表板',
+      descriptionEn: 'A U.S. Census data visualization dashboard built with React and Recharts, featuring real-time data from the Census Bureau API.',
+      descriptionZh: '基于 React 和 Recharts 构建的美国人口普查数据可视化仪表板，通过集成 Census Bureau API 实时展示人口、经济和人口统计数据。',
+      status: 'github',
+      icon: '🏛️',
+      url: '',
+      github: 'https://github.com/belugatempo-dot/CensusDashboard'
     }
   ],
 
