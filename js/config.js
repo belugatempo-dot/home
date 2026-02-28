@@ -93,7 +93,7 @@ const CONFIG = {
       descriptionZh: '一个简洁的仪表板，用于跟踪和分析你的投资组合。',
       status: 'live',
       icon: '📊',
-      url: 'https://invest-app.beluga-tempo.com',
+      url: 'https://invest.beluga-tempo.com',
       github: 'https://github.com/belugatempo-dot/invest-app'
     },
     {
