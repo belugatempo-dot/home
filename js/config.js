@@ -82,7 +82,7 @@ const CONFIG = {
       descriptionZh: '交互式可视化，让抽象的数学概念变得直观可感。',
       status: 'live',
       icon: '📐',
-      url: 'https://math-visualization-seven.vercel.app',
+      url: 'https://math-visualization.beluga-tempo.com',
       github: 'https://github.com/belugatempo-dot/math-visualization'
     },
     {
@@ -93,7 +93,7 @@ const CONFIG = {
       descriptionZh: '一个简洁的仪表板，用于跟踪和分析你的投资组合。',
       status: 'live',
       icon: '📊',
-      url: 'https://invest-app-omega.vercel.app',
+      url: 'https://invest-app.beluga-tempo.com',
       github: 'https://github.com/belugatempo-dot/invest-app'
     },
     {
@@ -104,7 +104,7 @@ const CONFIG = {
       descriptionZh: '一款游戏化的数学学习冒险，让练习变得有趣且引人入胜。',
       status: 'live',
       icon: '🎮',
-      url: 'https://math-quest-lime.vercel.app',
+      url: 'https://math-quest.beluga-tempo.com',
       github: 'https://github.com/belugatempo-dot/math-quest'
     },
     {
@@ -115,7 +115,7 @@ const CONFIG = {
       descriptionZh: '一款设计精美的计划本，与潮汐节律同步，为沿海生活而设计。',
       status: 'live',
       icon: '🌊',
-      url: 'https://tide-planner-2026.vercel.app',
+      url: 'https://tide-planner.beluga-tempo.com',
       github: 'https://github.com/belugatempo-dot/Tide-Planner-2026'
     },
     {
