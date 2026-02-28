@@ -75,6 +75,17 @@ const CONFIG = {
   // ========================================
   products: [
     {
+      id: 'starquest',
+      nameEn: 'StarQuest',
+      nameZh: 'StarQuest 星途探险',
+      descriptionEn: 'Complete quests. Earn stars. Unlock rewards. A gamified task and habit tracker.',
+      descriptionZh: '完成任务，收集星星，解锁奖励。一款游戏化的任务与习惯追踪器。',
+      status: 'live',
+      icon: '⭐',
+      url: 'https://starquest.beluga-tempo.com',
+      github: 'https://github.com/belugatempo-dot/StarQuest'
+    },
+    {
       id: 'math-visualization',
       nameEn: 'Math Visualization',
       nameZh: '数学可视化',
