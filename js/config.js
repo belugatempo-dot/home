@@ -82,7 +82,7 @@ const CONFIG = {
       descriptionZh: '交互式可视化，让抽象的数学概念变得直观可感。',
       status: 'live',
       icon: '📐',
-      url: 'https://math-visualization.beluga-tempo.com',
+      url: 'https://math.beluga-tempo.com',
       github: 'https://github.com/belugatempo-dot/math-visualization'
     },
     {
