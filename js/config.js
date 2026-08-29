@@ -161,6 +161,17 @@ const CONFIG = {
       icon: '🏛️',
       url: '',
       github: 'https://github.com/belugatempo-dot/CensusDashboard'
+    },
+    {
+      id: 'daily-planner',
+      nameEn: 'Daily Planner',
+      nameZh: '每日计划',
+      descriptionEn: 'A family-friendly daily planner that creates personalized schedules around school, activities, weather, goals, and rewards.',
+      descriptionZh: '一款适合家庭使用的每日计划工具，可根据学校、课外活动、天气、目标和奖励生成个性化日程。',
+      status: 'live',
+      icon: '🗓️',
+      url: 'https://daily-planner.beluga-tempo.com/',
+      github: ''
     }
   ],
 
